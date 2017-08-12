@@ -1,6 +1,6 @@
 # YouTubeApp
 
-A simple video application with a very clean interface where users can search for videos and instantly see five playable youtube videos. In my opinion, its simplicity is easier to navigate than youtubes.
+A simple video application with a very clean interface where users can search for videos and instantly see five playable youtube videos.
 
 ### TECH STACK
 1. React.js
@@ -11,6 +11,7 @@ A simple video application with a very clean interface where users can search fo
 3. Youtube API
 4. lodash (module)
 5. youtube-api-search (module)
+6. dotenv-webpack (module) **VERY COOL module that adds .env support to React Apps!
 
 ### WHAT I LEARNED
 1. More practice with ES6 destructuring: props can be destructed in the functional component parameters
