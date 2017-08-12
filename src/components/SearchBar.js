@@ -44,10 +44,10 @@ class SearchBar extends Component {
     // every react class must have a render method that returns jsx
     render(){
         return (
-            <div>
+            <div className="search-bar">
                 <input
                     value={this.state.term} 
-                    onChange={e => this.setState({ term: e.target.value })}
+                    onChange={e => this.onInputChange(e.target.value)}
                     />
             </div>
         );
@@ -56,10 +56,11 @@ class SearchBar extends Component {
     // all browser events that get triggered by an event handler they pass an event object
     // describes the context in which the event occured
     // defined as a method on the class
-    onInputChange = (e) => {
+    onInputChange = (term) => {
         // this is how we manipulate state
         // causes our component to automatically re render and pushes it to the DOM
-        this.setState({ term: e.target.value });
+        this.setState({ term });
+        this.props.onSearchTermChange(term);
     }
 
 }
