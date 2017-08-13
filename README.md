@@ -46,3 +46,6 @@ Using the lodash library, I used a method named **_.debounce** that takes the in
 import _ from 'lodash';
 const videoSearch = _.debounce((term) => { this.videoSearch(term) }, 300);
 ```
+
+
+### Source: UDEMY course taught by Stephen Grider (https://github.com/StephenGrider/)
